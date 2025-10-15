@@ -4,16 +4,14 @@ FROM node:20-alpine
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json to the working directory. This helps Docker cache the npm install step.
+# Copy package.json to the working directory.
 COPY package.json .
 
-# Install project dependencies. Since your app is zero-dependency, this will be very fast.
-# We comment it out since there are no dependencies.
+# Install project dependencies.
 # RUN npm install
 
 # Copy the main application script into the container
-COPY temp_test_app.js .
-
+# FIX: Changed 'temp_test_app.js' to 'index.js'
+COPY index.js . 
 # Command to run the application when the container starts.
-# This executes "node temp_test_app.js" using the script defined in package.json.
 CMD [ "npm", "start" ]
