@@ -12,6 +12,6 @@ COPY package.json .
 
 # Copy the main application script into the container
 # FIX: Changed 'temp_test_app.js' to 'index.js'
-COPY index.js . 
+COPY . . 
 # Command to run the application when the container starts.
 CMD [ "npm", "start" ]
