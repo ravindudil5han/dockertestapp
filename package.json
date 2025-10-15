@@ -1,0 +1,19 @@
+{
+  "name": "temporary-node-test-app",
+  "version": "1.0.0",
+  "description": "A zero-dependency, non-network Node.js script to test environment functionality (File I/O).",
+  "main": "temp_test_app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node temp_test_app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "test",
+    "cli",
+    "utility"
+  ],
+  "author": "",
+  "license": "ISC"
+}
